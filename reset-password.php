@@ -78,11 +78,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="bootstrap.min.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        .wrapper{ width: 90%; padding: 20px; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 m-auto ">
+                  <div class="wrapper bg-light shadow mt-5">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
@@ -101,6 +104,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <a class="btn btn-link" href="welcome.php">Cancel</a>
             </div>
         </form>
-    </div>    
+    </div>      
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
