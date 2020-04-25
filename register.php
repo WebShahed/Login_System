@@ -101,11 +101,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="bootstrap.min.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        .wrapper{ width: 100%; padding: 20px; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 m-auto">
+                 <div class="wrapper bg-light shadow mt-5">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -126,10 +129,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
+                <input type="reset" class="btn btn-secondary" value="Reset">
             </div>
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
-    </div>    
+    </div>  
+            </div>
+        </div>
+    </div>
+  
 </body>
 </html>
