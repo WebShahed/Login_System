@@ -96,11 +96,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="bootstrap.min.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        .wrapper{ width: 80%; padding: 20px; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="cotainer">
+        <div class="row">
+            <div class="col-6 m-auto ">
+                 <div class="wrapper bg-light shadow mt-5">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -119,6 +122,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
-    </div>    
+    </div>  
+            </div>
+        </div>
+    </div>
+  
 </body>
 </html>
